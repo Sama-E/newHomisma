@@ -1,5 +1,6 @@
 import { styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import React from "react";
 
 import fbIcon from "/src/assets/images/fbicon.png";
 import twitterIcon from "/src/assets/images/twittericon.png";
@@ -143,6 +144,6 @@ const Footer = () => {
       </CustomContainer>
     </Box>
   );
-}
+};
 
-export default Footer
+export default Footer;

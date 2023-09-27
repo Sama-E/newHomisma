@@ -1,9 +1,11 @@
+import React from "react";
 import { Box, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 
+import heroImg1 from "/src/assets/images/hero_illustration.png";
+import heroImg from "/src/assets/images/house4.jpg";
+import CustomButton from "/src/components/Custom/CustomButton";
 import Navbar from "/src/components/Nav/Navbar";
-import CustomButton from "/src/components/Global/CustomButton";
-import heroImg from "/src/assets/images/hero_illustration.png";
 
 const Hero = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
@@ -44,17 +46,16 @@ const Hero = () => {
                 mb: 4,
               }}
             >
-              Welcome to Besnik Agency
+              Welcome to Homisma
             </Typography>
             <Title variant="h1">
-              Discover a place where you'll love to live.
+            Your home shelters your family and your future. 
             </Title>
             <Typography
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
             >
-              Be the first to get the best real estate deals before they hit the
-              mass market! Hot foreclosure deals with one simple search!
+              Assured peace of mind by maintaining your property. Search for great deals on quailty home services and keep track of your greatest asset, your home.
             </Typography>
             <CustomButton
               backgroundColor="#0F1B4C"
