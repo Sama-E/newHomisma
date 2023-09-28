@@ -5,7 +5,7 @@ import CustomButton from "/src/components/Custom/CustomButton";
 
 const GetStarted = () => {
   const CustomContainer = styled(Container)(({ theme }) => ({
-    backgroundColor: "#E6F0FF",
+    backgroundColor: "white",
     height: "416px",
     display: "flex",
     justifyContent: "space-around",

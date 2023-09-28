@@ -27,6 +27,7 @@ const Register = () => {
     justifyContent: "center",
     alignItems: "center",
     padding: 50,
+    border: "2px solid gray",
     gap: theme.spacing(5),
     marginTop: theme.spacing(3),
     [theme.breakpoints.down("md")]: {

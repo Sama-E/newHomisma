@@ -44,7 +44,7 @@ const Details = () => {
     marginTop: theme.spacing(7),
     display: "flex",
     justifyContent: "space-between",
-    padding: theme.spacing(0, 5, 0, 5),
+    padding: theme.spacing(0, 5, 8, 5),
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
       gap: theme.spacing(5),
@@ -70,7 +70,6 @@ const Details = () => {
           </ImgContainer>
 
           <Box>
-            <Divider />
             <Typography
               sx={{
                 fontSize: "35px",
@@ -131,6 +130,14 @@ const Details = () => {
           </Box>
         </TextFlexbox>
       </Container>
+      <div
+        style={{
+          width: "5%",
+          height: "1px",
+          backgroundColor: "#000339",
+          margin: "0 auto",
+        }}
+      ></div>
     </Box>
   );
 }

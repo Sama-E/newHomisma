@@ -17,6 +17,7 @@ import {
   styled,
 } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { LinkOffTwoTone } from "@mui/icons-material";
 import CustomButton from "/src/components/Custom/CustomButton";
 import logoImg from "/src/assets/images/logo.png";
@@ -66,6 +67,10 @@ const Navbar = () => {
       </List>
     </Box>
   );
+
+  const Link = styled(Typography)(({ theme }) => ({
+    underline: "none",
+  }));
 
   const NavLink = styled(Typography)(({ theme }) => ({
     fontSize: "14px",
@@ -159,8 +164,21 @@ const Navbar = () => {
         }}
       >
         <NavbarLinksBox>
-          <NavLink variant="body2">Sign Up</NavLink> || 
-          <NavLink variant="body2">Register</NavLink>
+          <Link to="/login">
+            <CustomButton
+              backgroundColor="#0F1B4C"
+              color="#fff"
+              buttonText="Login"
+            />
+          </Link>
+          <Link to="/register">
+            <CustomButton
+              backgroundColor="gray"
+              color="#fff"
+              buttonText="Register"
+              heroBtn={true}
+            />
+          </Link>
         </NavbarLinksBox>
 
       </Box>

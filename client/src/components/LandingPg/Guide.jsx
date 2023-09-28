@@ -52,7 +52,7 @@ const Guide = () => {
       <div
         style={{
           width: "5%",
-          height: "5px",
+          height: "1px",
           backgroundColor: "#000339",
           margin: "0 auto",
         }}
@@ -143,6 +143,14 @@ const Guide = () => {
           </Box>
         </GuideBox>
       </GuidesBox>
+      <div
+        style={{
+          width: "5%",
+          height: "1px",
+          backgroundColor: "#000339",
+          margin: "0 auto",
+        }}
+      ></div>
     </Box>
   );
 }

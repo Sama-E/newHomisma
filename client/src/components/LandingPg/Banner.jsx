@@ -7,6 +7,7 @@ const Banner = () => {
   const CustomContainer = styled(Container)(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
+    marginBottom: theme.spacing(6),
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
       alignItems: "center",
