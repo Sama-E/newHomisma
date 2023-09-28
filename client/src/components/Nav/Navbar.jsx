@@ -20,7 +20,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { LinkOffTwoTone } from "@mui/icons-material";
 import CustomButton from "/src/components/Custom/CustomButton";
-import logoImg from "/src/assets/images/logo.png";
+
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -68,9 +68,6 @@ const Navbar = () => {
     </Box>
   );
 
-  const Link = styled(Typography)(({ theme }) => ({
-    underline: "none",
-  }));
 
   const NavLink = styled(Typography)(({ theme }) => ({
     fontSize: "14px",
@@ -164,14 +161,14 @@ const Navbar = () => {
         }}
       >
         <NavbarLinksBox>
-          <Link to="/login">
+          <Link style={{textDecoration: 'none'}} to="/login">
             <CustomButton
               backgroundColor="#0F1B4C"
               color="#fff"
               buttonText="Login"
             />
           </Link>
-          <Link to="/register">
+          <Link to="/register" style={{textDecoration: 'none'}}>
             <CustomButton
               backgroundColor="gray"
               color="#fff"
