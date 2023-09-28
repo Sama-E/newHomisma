@@ -45,7 +45,7 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Features", "Services", "Listed", "Contact"].map(
+        {["Home", "Features", "Services", "Listed", "Contact", "Sign Up", "Register"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -55,6 +55,8 @@ const Navbar = () => {
                   {index === 2 && <MiscellaneousServicesIcon />}
                   {index === 3 && <ListAltIcon />}
                   {index === 4 && <ContactsIcon />}
+                  {index === 5}
+                  {index === 6}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
@@ -121,15 +123,22 @@ const Navbar = () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <CustomMenuIcon onClick={toggleDrawer("left", true)} />
+          <CustomMenuIcon onClick={toggleDrawer("right", true)} />
           <Drawer
-            anchor="left"
-            open={mobileMenu["left"]}
-            onClose={toggleDrawer("left", false)}
+            anchor="right"
+            open={mobileMenu["right"]}
+            onClose={toggleDrawer("right", false)}
           >
-            {list("left")}
+            {list("right")}
           </Drawer>
-          <NavbarLogo src={logoImg} alt="logo" />
+          <Typography
+            sx={{
+              color: "#4F5361",
+              fontSize: "18px",
+              fontWeight: "bold",
+            }}>
+          .Homisma
+          </Typography>
         </Box>
 
         <NavbarLinksBox>
@@ -149,12 +158,11 @@ const Navbar = () => {
           gap: "1rem",
         }}
       >
-        <NavLink variant="body2">Sign Up</NavLink>
-        <CustomButton
-          backgroundColor="#0F1B4C"
-          color="#fff"
-          buttonText="Register"
-        />
+        <NavbarLinksBox>
+          <NavLink variant="body2">Sign Up</NavLink> || 
+          <NavLink variant="body2">Register</NavLink>
+        </NavbarLinksBox>
+
       </Box>
     </NavbarContainer>
   );

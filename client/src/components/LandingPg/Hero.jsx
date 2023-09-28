@@ -2,8 +2,7 @@ import React from "react";
 import { Box, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 
-import heroImg1 from "/src/assets/images/hero_illustration.png";
-import heroImg from "/src/assets/images/house4.jpg";
+import heroImg from "/src/assets/images/homes1.jpg";
 import CustomButton from "/src/components/Custom/CustomButton";
 import Navbar from "/src/components/Nav/Navbar";
 
