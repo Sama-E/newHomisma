@@ -12,6 +12,7 @@ import LandingPg from './pages/LandingPg/LandingPg';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Home from './pages/Home/Home';
+import ListCalendar from './components/Home/ListCalendar';
 
 const Layout = () => {
   return (
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "/calendar",
+        element: <ListCalendar />,
       },
     ],
   },

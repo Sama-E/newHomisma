@@ -2,24 +2,8 @@ import { Box, styled, IconButton, alpha } from "@mui/material";
 import { Container } from "@mui/system";
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import CustomButton from "/src/components/Custom/CustomButton";
-
-
-import CategoryGrid from "../Custom/CategoryGrid";
 
 const Search = () => {
-  const CustomBox = styled(Box)(({ theme }) => ({
-    display: "flex",
-    justifyContent: "center",
-    gap: theme.spacing(2),
-    marginTop: theme.spacing(3),
-    [theme.breakpoints.down("md")]: {
-      flexDirection: "column",
-      alignItems: "center",
-      textAlign: "center",
-    },
-  }));
-
 
   const Search = styled('div')(({ theme }) => ({
     border: "1px solid lightgray",
@@ -62,35 +46,18 @@ const Search = () => {
 
 
   return (
-    <Box sx={{ backgroundColor: "white", minHeight: "80vh" }}>
-      <Container>
-        <CustomBox
-          display= "flex"
-          alignItems= "center"
-          borderRadius="9px"
-          gap="10px"
-        >
-          <Search>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-          <SearchButton>         
-            <SearchIcon />
-          </SearchButton>
-        </CustomBox>
-        <CustomBox>
-          <Box>
-            <CategoryGrid />
-          </Box>
-          <Box sx={{ flex: "1" }}>
+    <>
+      <Search>
+        <StyledInputBase
+          placeholder="Search…"
+          inputProps={{ 'aria-label': 'search' }}
+        />
+      </Search>
+      <SearchButton>         
+        <SearchIcon />
+      </SearchButton>
+    </>
 
-          </Box>
-
-        </CustomBox>
-      </Container>
-    </Box>
   );
 }
 

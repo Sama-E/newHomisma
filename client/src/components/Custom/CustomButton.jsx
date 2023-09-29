@@ -15,7 +15,7 @@ const CustomButton = ({
     fontSize: "14px",
     cursor: "pointer",
     padding: "0.5rem 1.25rem",
-    borderRadius: "0px",
+    borderRadius: "7px",
     textTransform: "none",
     textUnderline:"none",
     display: "block",
