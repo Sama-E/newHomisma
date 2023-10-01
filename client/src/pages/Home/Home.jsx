@@ -2,10 +2,6 @@ import React from 'react';
 import Search from '/src/components/Home/Search';
 import { Box, styled, IconButton, alpha } from "@mui/material";
 import { Container } from "@mui/system";
-import InputBase from '@mui/material/InputBase';
-import SearchIcon from '@mui/icons-material/Search';
-import CustomButton from "/src/components/Custom/CustomButton";
-
 
 import CategoryGrid from "/src/components/Custom/CategoryGrid";
 import ListCalendar from '/src/components/Home/ListCalendar';
