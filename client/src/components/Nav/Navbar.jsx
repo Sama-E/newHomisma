@@ -144,12 +144,17 @@ const Navbar = () => {
         </Box>
 
         <NavbarLinksBox>
-          <NavLink variant="body2">Home</NavLink>
           <NavLink variant="body2">Features</NavLink>
           <NavLink variant="body2">Services</NavLink>
-          <NavLink variant="body2">Listed</NavLink>
-          <NavLink variant="body2">Contact</NavLink>
+          <NavLink variant="body2">About Us</NavLink>
         </NavbarLinksBox>
+
+        {/* If logged in  */}
+        {/* <NavbarLinksBox>
+          <NavLink variant="body2">Services</NavLink>
+          <NavLink variant="body2">Schedule</NavLink>
+          <NavLink variant="body2">Dashboard</NavLink>
+        </NavbarLinksBox> */}
       </Box>
 
       <Box

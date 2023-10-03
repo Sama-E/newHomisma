@@ -47,7 +47,7 @@ const ListCalendar = () => {
     <Box m="20px">
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
-        {/* <Box
+        <Box
           flex="1 1 20%"
           backgroundColor="white"
           p="15px"
@@ -79,24 +79,24 @@ const ListCalendar = () => {
               </ListItem>
             ))}
           </List>
-        </Box> */}
+        </Box>
 
         {/* CALENDAR */}
         <Box flex="1 1 100%">
           <FullCalendar
-            height="60vh"
+            height="100vh"
             plugins={[
               dayGridPlugin,
               timeGridPlugin,
               interactionPlugin,
               listPlugin,
             ]}
-            // headerToolbar={{
-            //   left: "prev,next today",
-            //   center: "title",
-            //   right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
-            // }}
-            initialView="listMonth"
+            headerToolbar={{
+              left: "prev,next today",
+              center: "title",
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+            }}
+            initialView="dayGridMonth"
             editable={true}
             selectable={true}
             selectMirror={true}
