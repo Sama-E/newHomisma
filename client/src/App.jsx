@@ -2,7 +2,6 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
   Outlet,
 } from "react-router-dom";
 
@@ -13,6 +12,7 @@ import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Home from './pages/Home/Home';
 import ListCalendar from './components/Home/ListCalendar';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 const Layout = () => {
   return (
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/calendar",
         element: <ListCalendar />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
       },
     ],
   },

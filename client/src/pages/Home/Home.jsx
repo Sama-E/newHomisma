@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from '/src/components/Home/Search';
-import { Box, styled, IconButton, alpha } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import { Container } from "@mui/system";
 
 import CategoryGrid from "/src/components/Custom/CategoryGrid";
@@ -22,22 +22,22 @@ const Home = () => {
   return (
     <Box sx={{ backgroundColor: "white", minHeight: "80vh" }}>
       <Container>
-      <CustomBox
-          display= "flex"
-          alignItems= "center"
-          borderRadius="9px"
-          gap="10px"
-        >
-      <Search />
-      </CustomBox>
-      <CustomBox>
-        <Box>
-          <CategoryGrid />
-        </Box>
-        {/* <Box sx={{ flex: "1" }}>
-          <ListCalendar />
-        </Box> */}
-      </CustomBox>
+        <CustomBox
+            display= "flex"
+            alignItems= "center"
+            borderRadius="9px"
+            gap="10px"
+          >
+          <Search />
+        </CustomBox>
+        <CustomBox>
+          <Box>
+            <CategoryGrid />
+          </Box>
+          {/* <Box sx={{ flex: "1" }}>
+            <ListCalendar />
+          </Box> */}
+        </CustomBox>
       </Container>
     </Box>
   )
