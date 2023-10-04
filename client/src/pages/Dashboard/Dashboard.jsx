@@ -10,6 +10,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import AddIcon from '@mui/icons-material/Add';
 import house from '/src/assets/images/house1.jpg';
 import beachHouse from '/src/assets/images/sunnyHome.jpg';
 
@@ -63,7 +64,7 @@ const Dashboard = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Dashboard</Button>
+                  <Button size="small">Details</Button>
                 </CardActions>
               </Card>
 
@@ -83,9 +84,14 @@ const Dashboard = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Dashboard</Button>
+                  <Button size="small">Details</Button>
                 </CardActions>
               </Card>
+
+              <Card sx={{ maxWidth: 245, backgroundColor:"white", p: "9px 9px 5px 9px" }}>
+                <AddIcon fontSize="large" sx={{ cursor:"pointer"}} />
+              </Card>
+
             </Box>
           </AccordionDetails>
         </Accordion>

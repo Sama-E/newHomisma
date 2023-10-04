@@ -22,6 +22,8 @@ const Home = () => {
   return (
     <Box sx={{ backgroundColor: "white", minHeight: "80vh" }}>
       <Container>
+
+        {/* SEARCH */}
         <CustomBox
             display= "flex"
             alignItems= "center"
@@ -30,14 +32,20 @@ const Home = () => {
           >
           <Search />
         </CustomBox>
+
+        {/* SEARCH GRID */}
         <CustomBox>
           <Box>
             <CategoryGrid />
-          </Box>
-          {/* <Box sx={{ flex: "1" }}>
-            <ListCalendar />
-          </Box> */}
+          </Box>    
         </CustomBox>
+
+        {/* SEASONAL MAINTENANCE*/}
+
+        {/* TRENDING PROJECTS */}
+
+        {/* DIY'S */}
+        
       </Container>
     </Box>
   )
