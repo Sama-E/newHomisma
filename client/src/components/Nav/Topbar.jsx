@@ -50,11 +50,11 @@ const Topbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
         {/* MIDDLE */}
         <FlexBetween>
-          <Box display="flex" alignItems="center" gap="0.5rem">
+          {/* <Box display="flex" alignItems="center" gap="0.5rem">
             <Typography variant="h6" fontWeight="bold" color="grey">
               newHOMISMA
             </Typography>
-          </Box>
+          </Box> */}
         </FlexBetween>
 
         {/* RIGHT SIDE */}
@@ -65,7 +65,7 @@ const Topbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           </IconButton>
           ) : (
             <>
-            <InputBase placeholder="Search..." sx={{ borderBottom: 1 }} />
+            {/* <InputBase placeholder="Search..." sx={{ borderBottom: 1 }} /> */}
             <IconButton>
               <Search sx={{ fontSize: "25px" }} />
             </IconButton>
@@ -121,6 +121,8 @@ const Topbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
               onClose={handleClose}
               anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
             >
+              <MenuItem>My Homes</MenuItem>
+              <MenuItem>My Profile</MenuItem>
               {/* <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem> */}
               <MenuItem>Log Out</MenuItem>
             </Menu>
