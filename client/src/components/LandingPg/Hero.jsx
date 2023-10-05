@@ -32,7 +32,6 @@ const Hero = () => {
   return (
     <Box sx={{ backgroundColor: "white", minHeight: "80vh" }}>
       <Container>
-        <Navbar />
         <CustomBox>
           <Box sx={{ flex: "1" }}>
             <Typography

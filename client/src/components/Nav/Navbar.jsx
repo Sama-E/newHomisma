@@ -46,7 +46,7 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Features", "Services", "Listed", "Contact", "Sign Up", "Register"].map(
+        {["Home", "Features", "Services", "About Us", "Log In", "Register"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -54,8 +54,8 @@ const Navbar = () => {
                   {index === 0 && <HomeIcon />}
                   {index === 1 && <FeaturedPlayListIcon />}
                   {index === 2 && <MiscellaneousServicesIcon />}
-                  {index === 3 && <ListAltIcon />}
-                  {index === 4 && <ContactsIcon />}
+                  {/* {index === 3 && <ListAltIcon />} */}
+                  {index === 3 && <ContactsIcon />}
                   {index === 5}
                   {index === 6}
                 </ListItemIcon>

@@ -13,7 +13,6 @@ const LandingPg = () => {
       <Guide />
       <Details />
       <GetStarted />
-      <Footer />
     </>
   )
 }
